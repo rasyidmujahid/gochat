@@ -12,7 +12,6 @@ const (
 )
 
 var (
-	pwd, _        = os.Getwd()
 	fs            = http.FileServer(http.Dir("/public"))
 	JSON          = websocket.JSON                // codec for JSON
 	Message       = websocket.Message             // codec for string, []byte
