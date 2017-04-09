@@ -13,7 +13,7 @@ const (
 
 var (
 	pwd, _        = os.Getwd()
-	fs            = http.FileServer(http.Dir("/Users/rasyidmujahid/Repo/go/src/github.com/rasyidmujahid/chat5/public"))
+	fs            = http.FileServer(http.Dir("/public"))
 	JSON          = websocket.JSON                // codec for JSON
 	Message       = websocket.Message             // codec for string, []byte
 	ActiveClients = make(map[*websocket.Conn]int) // map containing clients
